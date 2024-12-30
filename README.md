@@ -20,6 +20,26 @@
   npx expo install expo-font @expo-google-fonts/roboto
   ```
   
+- [x] [phosphor-react-native](https://github.com/duongdev/phosphor-react-native)
+
+  - Biblioteca para fazer a utilização de icones da biblioteca Phosphor Icons.
+
+  - Comando para instalação:
+  
+  ```bash
+  npm install --save phosphor-react-native
+  ```
+
+- [x] [react-native-svg](https://docs.expo.dev/versions/latest/sdk/svg/)
+
+  - Biblioteca para que o aplicativo consiga renderizar SVG na tela.
+
+  ```bash
+  npx expo install react-native-svg
+  ```
+
+
+
 
 
 
