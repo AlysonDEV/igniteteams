@@ -1,3 +1,4 @@
+import theme from "src/theme";
 import styled from "styled-components/native";
 
 export const Container = styled.View`
@@ -5,9 +6,9 @@ export const Container = styled.View`
   justify-content: center;
   align-items: center;
 
-  background-color: ${({ theme }) => theme.COLORS.GRAY_600};
+  background-color: ${theme.COLORS.GRAY_600};
 `;
 
-export const LoadingIndicator = styled.ActivityIndicator.attrs(({ theme }) => ({
+export const LoadingIndicator = styled.ActivityIndicator.attrs(({
   color: theme.COLORS.GREEN_700
 }))``

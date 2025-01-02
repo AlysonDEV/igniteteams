@@ -1,6 +1,7 @@
 import { TextInput } from "react-native";
-import theme from "src/theme";
 import styled from "styled-components/native";
+
+import theme from "src/theme";
 
 export const Container = styled(TextInput)`
   flex: 1;
