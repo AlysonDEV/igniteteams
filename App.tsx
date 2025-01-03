@@ -1,4 +1,4 @@
-import { ActivityIndicator, StatusBar, View } from "react-native";
+import { StatusBar } from "react-native";
 import { ThemeProvider } from "styled-components/native";
 import {
   useFonts,
@@ -6,7 +6,7 @@ import {
   Roboto_700Bold,
 } from "@expo-google-fonts/roboto";
 
-import { NewGroup } from "@screens/NewGroup";
+import { Players } from "@screens/Players";
 import theme from "./src/theme";
 import { Loading } from "@components/Loading";
 
@@ -23,7 +23,7 @@ export default function App() {
         backgroundColor="transparent"
         translucent
       />
-      {fontsLoaded ? <NewGroup /> : <Loading />}
+      {fontsLoaded ? <Players /> : <Loading />}
     </ThemeProvider>
   );
 }
