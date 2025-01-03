@@ -38,9 +38,39 @@
   npx expo install react-native-svg
   ```
 
+- [x] Tipos de navegação em telas
 
+  - [Stack Navigator](https://reactnavigation.org/docs/native-stack-navigator)
 
+    Navegação em Pilha, cada tela nova fica por cima da antiga. Quando precisar voltar para a tela anteior é nescessário remover a tela atual e vai aparece a tela "abaixo".
 
+  - [Tab Navigator](https://reactnavigation.org/docs/bottom-tab-navigator)
+
+    Utiliza icones na parte inferior para fazer a negação entre as telas que já estão carregadas.
+
+  - [Drawer Navigator](https://reactnavigation.org/docs/drawer-navigator)
+
+    Utiliza uma barra lateral para fazer a navegação dos aplicativos.
+
+- [x] [React Navitagor](https://reactnavigation.org/)
+
+  ```bash
+  npm install @react-navigation/native
+  ```
+
+  Devido o bug do styled-components foi nescessário remover o pacote e adcionar depois de fazer a instalação das dependências abaixo:
+
+  ```bash
+  npm remove styled-components
+  npx expo install react-native-screens react-native-safe-area-context
+  npm install styled-components --legacy-peer-deps
+  ```
+
+  No projeto vai utilizar o stack navigator então vai ser usado o código de instalação abaixo:
+
+  ```bash
+  npm install @react-navigation/native-stack --legacy-peer-deps
+  ```
 
 
   
